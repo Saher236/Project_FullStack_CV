@@ -5,7 +5,9 @@ function AdminPage() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/sample-data')
+    // axios.get('http://localhost:5000/api/sample-data')
+    axios.get('https://portfolio-backtend.onrender.com/api/sample-data')
+
       .then((res) => setData(res.data))
       .catch((err) => console.error('Error fetching data:', err));
   }, []);

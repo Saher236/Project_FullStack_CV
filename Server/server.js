@@ -18,6 +18,10 @@ app.get('/api/projects', (req, res) => {
   res.json(sampleData);
 });
 
+app.get('/api/sample-data', (req, res) => {
+  res.json({ message: 'Admin data loaded successfully', timestamp: Date.now() });
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
