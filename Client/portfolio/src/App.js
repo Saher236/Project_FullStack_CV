@@ -9,9 +9,12 @@ import AboutPage from './Pages/AboutPage';
 import ContactPage from './Pages/ContactPage';
 import SkillsPage from './Pages/SkillsPage';
 
+import Navbar from './Pages/Navbar';
+
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<PortfolioPage />} />
         <Route path="/admin" element={<AdminPage />} />
