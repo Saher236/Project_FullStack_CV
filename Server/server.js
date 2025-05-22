@@ -9,7 +9,7 @@ app.use(cors());
 
 // Sample data for portfolio
 const sampleData = [
-  { id: 1, title: 'Project 1', description: 'Saher Is The King' },
+  { id: 1, title: 'Project 1', description: 'Saher' },
   { id: 2, title: 'Project 2', description: 'Description of Project 2' },
 ];
 
